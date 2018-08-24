@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
   resources :songs
   
-  scope '/admin', module: 
+  scope '/admin', module: 'admin' do
+    
 
 end
