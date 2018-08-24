@@ -7,4 +7,6 @@ class Preference < ActiveRecord::Base
   def artist_sort_order
     Artist.order(name: :asc)
   end
+  
+  
 end
