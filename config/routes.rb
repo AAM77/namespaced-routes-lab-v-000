@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   #  resources 'preferences', only: [:index]
   #end
   
-  namespace: 
+  namespace :admin do
+    resources 'preferences', only: [:index]
 
 end
