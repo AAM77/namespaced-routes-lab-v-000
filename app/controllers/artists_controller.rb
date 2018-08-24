@@ -10,8 +10,10 @@ class ArtistsController < ApplicationController
   def new
     p = Preference.find_by(id: 1)
     if p.allow_create_artists == false
-      redirect_to 
-    @artist = Artist.new
+      redirect_to artists_path
+    else
+      @artist = Artist.new
+    end
   end
 
   def create
