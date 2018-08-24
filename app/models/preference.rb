@@ -1,5 +1,5 @@
 class Preference < ActiveRecord::Base
   
   def song_sort_order
-    Song.all.order()
+    Song.order(name: :asc)
 end
