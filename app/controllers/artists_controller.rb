@@ -8,7 +8,9 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    binding.pry
+    p = Preference.find_by(id: 1)
+    if p.allow_create_artists == false
+      redirect_to 
     @artist = Artist.new
   end
 
