@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   #scope '/admin', module: 'admin' do
   #  resources 'preferences', only: [:index]
   #end
+  
+  namespace: 
 
 end
